@@ -2,15 +2,46 @@
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" href='/staticFiles/main.css' />
-
-  <script>
-    alert("Page has been loaded successfully")
-  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href='/staticFiles/main.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </head>
-  <body>
-    <h1>Capstone App</h1>
-    <p>Adam and Russ Capstone!!</p>
+  <body class="the_body">
+
+  <h1> CS 467 Capstone Project:</h1>
+
+  <div class="title_ascii"><pre class="title_ascii">{{ title }}</pre></div>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#about">About</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+  </ul>
+
+<div class="tab-content">
+  <div id="about" class="tab-pane fade in active">
+    <h3>About the Project:</h3>
+    <p>What would you like to do? <span class="blink_me">_</span></p>
+
+  <div class="content">
+    <p class="p_content">Welcome to the world of computer science, where imagination meets innovation and possibilities
+      are endless. In this exciting project, we delve into the realm of text based adventures, exploring the realms of
+      programming, natural language, and software development. Through meticulous planning, creative problem-solving,
+      and rigorous coding, we aim to create a fun python project to showcase our talents.</p>
+  </div>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Menu 1</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+
+
   </body>
 </html>

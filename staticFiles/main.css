@@ -1,17 +1,69 @@
-body {
-  background: Linen;
+.the_body {
+  background: #282a36;
   margin-top: 50px;
   margin-left: 100px;
   }
 
 h1 {
-  font-family: Verdana, Geneva, sans-serif;
+
   font-size: 2.5em;
-  color: FireBrick;
+  color: #f8f8f2;
+  }
+
+  a {
+  color: #ffb86c;
+  }
+
+  h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #f8f8f2;
   }
 
 p {
   font-family: Georgia, serif;
   font-size: 1.2em;
-  color: DarkSlateGray;
+  color: #50fa7b;
   }
+
+  .p_content{
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  color: white;
+  }
+  }
+
+  li {
+  color: white;
+  }
+
+  .title_ascii {
+   color: #50fa7b;
+   background: black;
+   border-style: none !important;
+  }
+
+  body {
+
+  width: 850px
+  }
+
+  .content {
+  border-bottom: 2px solid;
+  color: #ff79c6;
+  width: 850px;
+  padding: 10px;
+  }
+
+  .blink_me {
+  animation: blinker 1s linear infinite;
+  color: #50fa7b;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.active a {
+background-color: #f8f8f2 !important;
+}
