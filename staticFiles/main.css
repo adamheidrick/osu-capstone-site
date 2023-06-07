@@ -51,7 +51,7 @@ p {
   .content {
   border-bottom: 2px solid;
   color: #ff79c6;
-  width: 850px;
+  width: 700px;
   padding: 10px;
   }
 
@@ -67,4 +67,24 @@ p {
 }
 .active a {
 background-color: #f8f8f2 !important;
+}
+
+ul.a {
+list-style-type: square;
+color: #f8f8f2;
+}
+
+ol.a {
+color: #f8f8f2;
+}
+
+a.repo {
+  font-family: Georgia, serif !important;
+  font-size: 1.2em;
+  color: #ff79c6;
+  background: #282a36 !important;
+}
+
+a.inner {
+    background: #282a36 !important;
 }

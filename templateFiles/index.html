@@ -1,44 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href='/staticFiles/main.css' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 
-  </head>
-  <body class="the_body">
-
+<body class="the_body">
   <h1> CS 467 Capstone Project:</h1>
-
   <div class="title_ascii"><pre class="title_ascii">{{ title }}</pre>
-      <p>&nbsp;&nbsp;&nbsp;What would you like to do? <span class="blink_me">_</span></p></div>
+      <p>&nbsp;&nbsp;&nbsp;$: What would you like to do? <span class="blink_me">_</span></p></div>
   <br>
+
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-    <li><a data-toggle="tab" href="#menu1">Commands</a></li>
-    <li><a data-toggle="tab" href="#menu2">Repos</a></li>
+    <li><a data-toggle="tab" href="#menu1">How to Install</a></li>
+    <li><a data-toggle="tab" href="#menu2">Commands</a></li>
+    <li><a data-toggle="tab" href="#menu3">Main Room Walk-through</a></li>
+    <li><a data-toggle="tab" href="#menu4">Repos</a></li>
   </ul>
 
 <div class="tab-content">
   <div id="about" class="tab-pane fade in active">
-    <h3>About the Project:</h3>
-
-  <div class="content">
-    <p class="p_content">Welcome to the world of computer science, where imagination meets innovation and possibilities
+    <div class="content">
+      <h3>About the Project:</h3>
+      <p class="p_content">Welcome to the world of computer science, where imagination meets innovation and possibilities
       are endless. In this exciting project, we delve into the realm of text based adventures, exploring the realms of
       programming, natural language, and software development. Through meticulous planning, creative problem-solving,
       and rigorous coding, we aim to create a fun python project to showcase our talents.</p>
+
+      <h3>About the Team:</h3>
+      <p class="p_content">This team consists of two Army veterans who have a passion for computer science and dad jokes.</p>
+       <ul class="a">
+      <li>Russ McCuen: <a class="inner" href=""> Git Repo</a></li>
+      <li>Adam Heidrick: <a class="inner" href=""> Git Repo</a></li>
+      </ul>
+    </div>
   </div>
-  </div>
+
   <div id="menu1" class="tab-pane fade">
-    <h3>Menu 1</h3>
-    <p>Some content in menu 1.</p>
+    <h3>How to Install:</h3>
+    <div class="content">
+    <ol class="a">
+      <li>Download files or clone repository with   <a class="inner" href="https://github.com/russ-mccuen/CS467_TBAG.git">this link</a> </li>
+      <li>Ensure you have python 3.10 installed. If not, please install python 3.10.</li>
+      <li>From terminal, navigate to downloaded location.</li>
+      <li>Type python main.py or 'python3 main.py to run program.</li>
+      <li>Type 1 to start the game at the start menu.</li>
+    </ol>
+    </div>
   </div>
+
+
   <div id="menu2" class="tab-pane fade">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
+    <div class="content">
+    <h3>Useful Commands</h3>
+    <p><b>Commands</b> a mix of verbs and objects of varying lengths. For example:</p>
+    <ul class="a">
+      <li>look room</li>
+      <li>use tv</li>
+      <li>go [navigation option]</li>
+    </ul>
+    <h3> Verbs </h3>
+    <p>Some of the available verbs and their synonyms are as follows (some will be discovered during gameplay and are not listed:</p>
+    <ol class="a">
+      <li>go or [move, walk, run, travel]</li>
+      <li>take or [get, grab, pick-up]</li>
+      <li>drop or [put-down, release]</li>
+      <li>look or [examine, inspect]</li>
+      <li>use or [activate, operate]</li>
+    </ol>
+    </div>
+  </div>
+
+    <div id="menu3" class="tab-pane fade">
+    <div class="content">
+    <h3>Main Room Walk-through:</h3>
+    <p>The The following commands, executed in order, will unlock the next room:</p>
+    <ol class="a">
+      <li>"use tv" You will see a code UHF-73 being described after you use the tv.</li>
+      <li>"use tablet" To unlock the tablet type in UHF-73.</li>
+      <li>Type "q" to exit out of tablet mode.</li>
+      <li>"examine desk" On the desk you will see a letter.</li>
+      <li>"examine letter" On the letter you will see a sentence that ends with place bar; you will need this in the next room</li>
+      <li>"go 1" This will take you out of the main room and into the room that was unlocked by the tablet.</li>
+    </ol>
+      <p>For a full walkthrough, read the <a class="inner" href="https://github.com/russ-mccuen/CS467_TBAG/blob/main/README.md">README.md</a> </p>
+    </div>
+  </div>
+
+  <div id="menu4" class="tab-pane fade">
+    <div class="content">
+    <h3>Check out the Git Repos:</h3>
+    <p><a class= "repo" href="https://github.com/russ-mccuen/CS467_TBAG/tree/main">Text Adventure Game</a> </p>
+    <p><a class= "repo" href="https://github.com/adamheidrick/osu-capstone-site">This Flask App</a> </p>
+    </div>
   </div>
 </div>
 
